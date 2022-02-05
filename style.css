@@ -25,15 +25,17 @@ body{
     width: 50%;
     background-image:url("./images/bg-pattern-desktop.svg") ;
     background-repeat: no-repeat;
-    background-size: 800px 900px;
-    background-position:-410px -280px;
+    background-size: 900px 900px;
+    background-position:-510px -275px;
     overflow: hidden;
 }
 
 
 
 .flex-cont{
-    width: 70%;
+    width: 900px;
+    max-width: 1440px;
+    height: 480px;
     background: white;
     border-radius: 25px;
     display: flex;
@@ -42,8 +44,8 @@ body{
 
 .flex-cont  .icon{
     position: absolute;
-    left:-90px;
-    bottom: 120px;
+    left:-93px;
+    bottom: 109px;
 }
 
 .flex-cont .img-cont img{
@@ -52,20 +54,21 @@ body{
 }
 
 .info-cont{
-    padding: 40px 100px 40px 40px;
+    padding: 40px 70px 40px 40px;
     width: 50%;
 }
 
 .info-cont h1{
-    padding-bottom: 20px;
+    padding-bottom:10px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .info-cont p{
     display: none;
     font-weight: 400;
     margin-top: 13px;
+    font-size: 14px;
 }
 
 .info-cont p.open{
@@ -79,7 +82,7 @@ body{
 }
 
 .info-cont h6{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
