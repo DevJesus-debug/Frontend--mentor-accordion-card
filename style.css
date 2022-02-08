@@ -71,6 +71,7 @@ body{
     font-size: 14px;
 }
 
+
 .info-cont p.open{
     display: block;
 }
@@ -87,6 +88,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.info-cont h6:hover{
+    color: rgb(255, 177, 31);
 }
 
 .info-cont img{
