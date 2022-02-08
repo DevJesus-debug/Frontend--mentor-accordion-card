@@ -20,25 +20,25 @@
         <ul>
           <li>
             <h6>How many team members can I invite?<img class="arrow-btn" src="./images/icon-arrow-down.svg" alt=""></h6>
-            <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+            <p class="content">You can invite up to 2 additional users on the Free plan. There is no limit on 
               team members for the Premium plan.</p>
           </li>
           <li>
             <h6>What is the maximum file upload size?<img class="arrow-btn" src="./images/icon-arrow-down.svg" alt=""></h6>
-            <p class="open">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            <p class="content">No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </li>
           <li>
             <h6>How do I reset my password?<img class="arrow-btn" src="./images/icon-arrow-down.svg" alt=""></h6>
-            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+            <p class="content">Click “Forgot password” from the login page or “Change password” from your profile page.
               A reset link will be emailed to you.</p>
           </li>
           <li>
             <h6>Can I cancel my subscription?<img class="arrow-btn" src="./images/icon-arrow-down.svg" alt=""></h6>
-            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+            <p class="content">Yes! Send us a message and we'll process your request no questions asked.</p>
           </li>
           <li>
             <h6>Do you provide additional support?<img class="arrow-btn" src="./images/icon-arrow-down.svg" alt=""></h6>
-            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            <p class="content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
           </li>
         </ul>
       </div>
@@ -48,7 +48,85 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
-  <script src="app.js"></script>
+
+  <script>
+
+    const title = document.querySelectorAll("h6")
+    const content = document.querySelectorAll(".content");
+    const button = document.querySelectorAll(".arrow-btn");
+
+     button[0].addEventListener("click", ()=>{
+          content[0].classList.toggle("open")
+          content[1].classList.remove("open")
+          content[2].classList.remove("open")
+          content[3].classList.remove("open")
+          content[4].classList.remove("open")
+          title[0].classList.toggle("bold");
+          title[1].classList.remove("bold");
+          title[2].classList.remove("bold");
+          title[3].classList.remove("bold");
+          title[4].classList.remove("bold");
+         
+     })
+
+     button[1].addEventListener("click", ()=>{
+          content[1].classList.toggle("open")
+          content[0].classList.remove("open")
+          content[2].classList.remove("open")
+          content[3].classList.remove("open")
+          content[4].classList.remove("open")
+          title[1].classList.toggle("bold");
+          title[0].classList.remove("bold");
+          title[2].classList.remove("bold");
+          title[3].classList.remove("bold");
+          title[4].classList.remove("bold");
+     })
+
+     button[2].addEventListener("click", ()=>{
+          content[2].classList.toggle("open")
+          content[1].classList.remove("open")
+          content[0].classList.remove("open")
+          content[3].classList.remove("open")
+          content[4].classList.remove("open")
+          title[2].classList.toggle("bold");
+          title[1].classList.remove("bold");
+          title[0].classList.remove("bold");
+          title[3].classList.remove("bold");
+          title[4].classList.remove("bold");
+     })
+
+     button[3].addEventListener("click", ()=>{
+          content[3].classList.toggle("open")
+          content[1].classList.remove("open")
+          content[2].classList.remove("open")
+          content[0].classList.remove("open")
+          content[4].classList.remove("open")
+          title[3].classList.toggle("bold");
+          title[1].classList.remove("bold");
+          title[2].classList.remove("bold");
+          title[0].classList.remove("bold");
+          title[4].classList.remove("bold");
+     })
+
+     button[4].addEventListener("click", ()=>{
+          content[4].classList.toggle("open")
+          content[1].classList.remove("open")
+          content[2].classList.remove("open")
+          content[3].classList.remove("open")
+          content[0].classList.remove("open")
+          title[4].classList.toggle("bold");
+          title[1].classList.remove("bold");
+          title[2].classList.remove("bold");
+          title[3].classList.remove("bold");
+          title[0].classList.remove("bold");
+     })
+
+   
+    
+
+
+
+  </script>
 </body>
 </html>
 

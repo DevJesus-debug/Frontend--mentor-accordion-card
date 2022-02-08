@@ -90,12 +90,17 @@ body{
     align-items: center;
 }
 
+.info-cont h6.bold{
+   font-weight: 700;
+}
+
 .info-cont h6:hover{
     color: rgb(255, 177, 31);
 }
 
 .info-cont img{
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .info-cont h6.open-text{
