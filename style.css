@@ -48,7 +48,11 @@ body{
     bottom: 109px;
 }
 
-.flex-cont .img-cont img{
+.flex-cont .img-cont .mobile-img{
+    display: none;
+}
+
+.flex-cont .img-cont .desktop-img{
     margin-left: -80px;
     margin-top: 60px;
 }
@@ -64,12 +68,20 @@ body{
     margin-top: 20px;
 }
 
- li > p{
+
+li > p{
     display: none;
     font-weight: 400;
     margin-top: 13px;
     font-size: 14px;
 }
+
+
+
+.active > p{
+    display: block;
+}
+
 
 li .question{
     display: flex;
@@ -78,17 +90,13 @@ li .question{
 }
 
 
-.active > p{
-    display: block;
-}
-
 .info-cont ul li{
     list-style: none;
     padding:15px 0;
     border-bottom: solid 1px rgba(61, 61, 61, 0.198);
 }
 
- h6{
+h6{
     font-size: 14px;
     font-weight: 400;
     display: flex;
@@ -115,4 +123,96 @@ li .question{
     transform: rotate(180deg);
 }
 
+/*MOBILE STYLING*/
 
+@media screen and (max-width:980px){
+    
+    .flex-cont{
+        width: 600px;
+        max-width: 1440px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-cont{
+        width: 100%;
+        background-image:url("./images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+        background-position:100px 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex-cont .img-cont .desktop-img{
+        display: none;
+        margin-left: -80px;
+        margin-top: 60px;
+    }
+
+    .flex-cont .img-cont .mobile-img{
+        display: flex;
+    }
+
+    .info-cont{
+        padding: 40px 70px 40px 40px;
+        width: 100%;
+    }
+    
+    .flex-cont  .icon{
+        position: absolute;
+        left:0;
+        top: 0;
+    }
+
+
+}
+
+@media screen and (max-width:376px){
+    
+    .flex-cont{
+        width: 320px;
+        max-width: 1440px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-cont{
+        width: 100%;
+        background-image:url("./images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+        background-position:100px 0px;
+        overflow:visible;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex-cont .img-cont .desktop-img{
+        display: none;
+        margin-left: -80px;
+        margin-top: 60px;
+    }
+
+    .flex-cont .img-cont .mobile-img{
+        display: flex;
+        width: 230px;
+        margin-top: -100px;
+    }
+
+    .info-cont{
+        padding: 40px 10px 40px 10px;
+        width: 100%;
+    }
+    
+    .flex-cont  .icon{
+        position: absolute;
+        left:0;
+        top: 0;
+    }
+
+
+}

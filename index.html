@@ -13,7 +13,8 @@
     <main class="flex-cont">
       <img class="icon" src="./images/illustration-box-desktop.svg" alt="">
       <div class="img-cont">
-        <img src="./images/illustration-woman-online-desktop.svg" alt="">
+        <img class="desktop-img" src="./images/illustration-woman-online-desktop.svg" alt="">
+        <img class="mobile-img" src="./images/illustration-woman-online-desktop.svg" alt="">
       </div>
       <div class="info-cont">
         <h1>FAQ</h1>
@@ -70,6 +71,7 @@
 
   
     headers.forEach((header) => header.addEventListener("click", () =>{
+        
         if(header.parentNode.classList.contains("active")){
             header.parentNode.classList.toggle("active");
         }else{
