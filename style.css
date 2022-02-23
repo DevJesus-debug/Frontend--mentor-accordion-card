@@ -128,9 +128,9 @@ h6{
 @media screen and (max-width:980px){
     
     .flex-cont{
-        width: 600px;
+        width: 500px;
         max-width: 1440px;
-        height: 900px;
+        height: 700px;
         display: flex;
         flex-direction: column;
     }
@@ -175,8 +175,9 @@ h6{
     .flex-cont{
         width: 320px;
         max-width: 1440px;
-        height: 700px;
+        height: 500px;
         display: flex;
+        margin-top: 100px;
         flex-direction: column;
     }
 
@@ -204,14 +205,24 @@ h6{
     }
 
     .info-cont{
-        padding: 40px 10px 40px 10px;
+        padding: 25px 15px 0px 15px;
         width: 100%;
     }
+
+    .info-cont h1{
+        text-align: center;
+    }
+
+    .info-cont .question h6{
+        font-size: 14px;
+    }
+    
     
     .flex-cont  .icon{
         position: absolute;
-        left:0;
-        top: 0;
+        left:38px;
+        top: -35px;
+        width: 95px;
     }
 
 
