@@ -137,15 +137,19 @@ h6{
 
     .img-cont{
         width: 100%;
-        background-image:url("./images/bg-pattern-mobile.svg");
+        height: 120px;
+        background-image:url("./images/bg-pattern-desktop.svg") ;
         background-repeat: no-repeat;
-        background-size: 400px 200px;
-        background-position:100px 0px;
+        background-size: 230px 210px;
+        background-position:45px -120px;
         overflow: hidden;
         display: flex;
         justify-content: center;
     }
     
+    
+
+
     .flex-cont .img-cont .desktop-img{
         display: none;
         margin-left: -80px;
@@ -181,16 +185,7 @@ h6{
         flex-direction: column;
     }
 
-    .img-cont{
-        width: 100%;
-        background-image:url("./images/bg-pattern-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: 400px 200px;
-        background-position:100px 0px;
-        overflow:visible;
-        display: flex;
-        justify-content: center;
-    }
+  
     
     .flex-cont .img-cont .desktop-img{
         display: none;
@@ -199,30 +194,33 @@ h6{
     }
 
     .flex-cont .img-cont .mobile-img{
-        display: flex;
         width: 230px;
-        margin-top: -100px;
+        position: absolute;
+        top: -105px;
+       
     }
 
     .info-cont{
-        padding: 25px 15px 0px 15px;
+        padding: 0px 15px 0px 15px;
         width: 100%;
     }
 
     .info-cont h1{
         text-align: center;
+        margin-top: 0;
     }
 
     .info-cont .question h6{
-        font-size: 14px;
+        font-size: 13px;
     }
     
     
     .flex-cont  .icon{
         position: absolute;
         left:38px;
-        top: -35px;
+        top: -42px;
         width: 95px;
+        z-index: 100;
     }
 
 
